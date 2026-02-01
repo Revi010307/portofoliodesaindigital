@@ -6,6 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
+
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #ADD8E6;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+    }
+
+    h1, h2, h3, p {
+      text-align: center;
+    }
+
+    /* FOTO PROFIL */
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* ================= GALERI UMUM ================= */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      max-width: 520px;
+      margin: 15px auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,.15);
+    }
+
+    /* ================= BANNER BESAR ================= */
+    .gallery.banner {
+      grid-template-columns: 1fr;
+      max-width: 700px;
+    }
+
+    .gallery.banner img {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* ================= 2 BANNER KECIL ================= */
+    .gallery.banner-small {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 600px;
+}
+
+
+    .gallery.banner-small img {
+      max-width: 200px;
+      margin: 0 auto;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  
+        /* PORTFOLIO */
+.portfolio {
+    text-align: center;
+}
+
+
         body {
             font-family: Arial, sans-serif;
             background-color: #ADD8E6;
@@ -65,18 +146,11 @@
             color: white;
             text-decoration: none;
             border-radius: 5px;
-        }
-
-        .fb {
-            background-color: #3B5998;
-        }
-
-        .twitter {
-            background-color: #55ACEE;
+    
         }
 
         .google {
-            background-color: #dd4b39;
+            background-color: #dd4b39; 
         }
 
         .wa {
@@ -90,74 +164,109 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
+            <li><a href="#highlight">Highlight Project</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#cv">Download CV</a></li>
+            
         </ul>
     </nav>
 
     <div id="home" class="container">
+        
+       <img src="revi1.jpeg" class="profile-img">
         <h1 align="center">REVI TIARAWATI</h1>
-        <img src="vi.jpg" width="100px" height="100px">
         <h2 align="center">Overview</h2>
-        <p align="center">Lulusan SMK Jurusan Pengembangan Perangkat Lunak dan Gim (PPLG) dari SMK Al-ghifari Banyuresmi
-            Berpengalaman dan Mampu Membangun Website, dll Hingga Instalasi Jaringan lainnya. Saat Ini, Memiliki
-            Ketertarikan Untuk Bekerja Menjadi IT Support.</p>
+        <p align="center"> Graphic Design | Digital Printing | Promotional Media</p>
         <table>
-            <tr>
-                <th>Skill</th>
-                <th>Pengalaman</th>
-            </tr>
-            <tr>
-                <td>
-                    <ul>
-                        <li>HTML</li>
-                        <li>JavaScript Pemula</li>
-                        <li>CSS</li>
-                        <li>Photographer</li>
-                        <li>Canva</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Seminar One Day Training</li>
-                        <li>Juara Karate 1 Jabar</li>
-                        <li>Course English Pare</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
+            <hr>
+
+             <div id="about" class="container">
+        <h1>About Me</h1>
+        <p>Desainer grafis dengan fokus pada visual yang komunikatif, estetik, dan tepat sasaran. Berpengalaman dalam mengerjakan desain digital seperti banner, poster, media sosial,
+ maupun cetak dengan hasil yang terstruktur, memperhatikan detail, serta menyesuaikan dengan kebutuhan brand.
+        </p>
+
+    </div>
+    
+</table>
     </div>
 
     <div id="about" class="container">
-        <h1>About Me</h1>
-        <p>Revi Tiarawati adalah lulusan SD tahun 2017 dan SMP 2020 Saya pernah kursus Bahasa inggris di Pare Jawa Timur
-            di tahun 2022.
 
-            Selama pembelajaran di sekolah,Revi Tiarawati aktif dalam organisasi English Club sebagai Anggota,
+    <section class="portfolio">
+  <div class="container">
+  <h2>Highlight Project</h2>
+  <P>Selected Works</P>
 
-            OSIS sebagai Wakil Sekretaris,Pramuka sebagai Ketua Angkatan dan Anggota cabutan DKR 2022,dan juga Karate.
-
-            serta pernah memenangkan lomba Karate champions In Garut Kejurprov Juara 1. Dan Memiliki passion dalam
-            translating dan interpreting. </p>
-        <video controls width="350" height="350">
-            <source src="video vi.mp4" type="video/mp4">
-        </video>
+  <!-- PROJECT 1 -->
+  <div class="project">
+    <h3>PROMOSI CAFE</h3>
+    <div class="gallery">
+      <img src="promosi.jpg">
+      <img src="DRINK.jpg">
+      <img src="COFFEE.jpg">
+      <img src="MENU1.jpg">
     </div>
+    <p>Poster, konten Instagram, dan promosi café</p>
+    <p><i>Setiap desain disesuaikan dengan kebutuhan brand dan permintaan klien.</i></p>
+  </div>
+
+  <!-- PROJECT 2 -->
+  <div class="project">
+    <h3>KATALOG | Produksi Fashion </h3>
+    <div class="gallery">
+      <img src="CATALOG1.jpg">
+      <img src="CATALOG4.jpg">
+      <img src="CATALOG2.jpg">
+      <img src="CATALOG3.jpg">
+    </div>
+    <p>Konten branding Fashion Production</p>
+    <p><i>Setiap desain disesuaikan dengan kebutuhan brand dan permintaan klien.</i></p>
+  </div>
+
+  <!-- PROJECT 3 -->
+  <div class="project">
+    <h3>BANNER</h3>
+
+    <!-- banner besar -->
+    <div class="gallery banner">
+      <img src="leuit1.jpg">
+    </div>
+
+    <!-- 2 banner kecil -->
+    <div class="gallery banner-small">
+         <img src="benner.jpg">
+      <img src="banner stand.jpg">
+      <img src="BENNER1.jpg">
+      <img src="banner fitness.jpg">
+    </div>
+
+
+    <h3>   Butuh desain & cetak banner tanpa ribet?</h3>
+    <p>Kami melayani jasa desain grafis dan cetak digital seperti banner, spanduk, poster, dan kebutuhan promosi lainnya.
+Harga terjangkau, hasil berkualitas.
+Tidak perlu datang ke tempat — konsultasi & pemesanan bisa via WhatsApp, terima beres sampai jadi.</p>
+    <p><i>Setiap desain disesuaikan dengan kebutuhan brand dan permintaan klien.</i></p>
+  </div>
+
+</div>
+
+</section>
+</div>
+
+   
 
     <div id="contact" class="container">
         <h1>Contact Me</h1>
-        <a href="#" class="wa contact-button"><i class="fa-brands fa-whatsapp"></i> WhatsApp: +62 838 3658 4522</a>
-        <a href="#" class="fb contact-button"><i class="fa-brands fa-facebook"></i> Facebook: Reb Mariska L</a>
-        <a href="#" class="twitter contact-button"><i class="fa-brands fa-twitter"></i> Twitter: Revi Tiarawaty</a>
+        <a href="#" class="wa contact-button"><i class="fa-brands fa-whatsapp"> </i> WhatsApp: +62 838 3658 4522</a>
         <a href="#" class="google contact-button"><i class="fa-solid fa-envelope"></i> Email: Waty010307@gmail.com</a>
 
     </div>
 
-    <div id="cv" class="container">
-        <h1>Download CV</h1>
-        <p>You can download my CV here:</p>
-        <a href="CV REVI.pdf" download>Click to Download</a>
-    </div>
+    <footer>
+  <p>© 2026 REVI TIARAWATI – All Rights Reserved</p>
+</footer>
+</center>
 </body>
 
 </html>
+
